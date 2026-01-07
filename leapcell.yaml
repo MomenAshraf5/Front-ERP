@@ -1,6 +1,0 @@
-service_name: erp-frontend
-runtime: nodejs
-build_command: npm install -g pnpm && if [ -d "FrontEnd" ]; then cd FrontEnd; fi && pnpm install && pnpm build
-start_command: if [ -d "FrontEnd" ]; then cd FrontEnd; fi && pnpm preview --port 8080 --host
-env_vars:
-  - VITE_API_BASE_URL: https://placeholder-api.leapcell.dev/api/v1
